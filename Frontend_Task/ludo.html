@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .main {
+            width: 49.11%;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+        }
+
+
+        .square {
+            height: 6vh;
+            width: 3vw;
+            border: 1px solid;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            font-size: larger;
+            background-color: white;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .house {
+            height: 168px;
+            width: 174px;
+            padding: 7%;
+        }
+
+        .home {
+            background-color: white;
+            height: 23vh;
+            width: 13vw;
+            display: grid;
+            grid-template-columns: 4fr 4fr;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .circle {
+            border: 3px solid red;
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            margin-left: 20%;
+
+        }
+
+        .middle {
+            height: 0;
+            width: 0;
+            margin: 0 auto;
+            border-top: 65px solid black;
+            border-left: 73.5px solid red;
+            border-right: 73.5px solid green;
+            border-bottom: 65px solid blue;
+
+
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 0;
+        }
+
+        .box1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .border_blue {
+            border: 3px solid blue;
+
+        }
+
+        .border_yellow {
+            border: 3px solid yellow;
+        }
+
+        .border_green {
+            border: 3px solid green;
+        }
+    </style>
+</head>
+<div class="main">
+    <div class="red house">
+        <div class="home">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square green"></div>
+        <div class="square green"><i class="fa-solid fa-star"></i></div>
+        <div class="square green"><i class="fa-solid fa-star"></i></div>
+        <div class="square green"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square green"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square green"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square green"></div>
+        <div class="square"></div>
+    </div>
+
+
+    <div class="green house">
+        <div class="home">
+            <div class="circle border_green"></div>
+            <div class="circle border_green"></div>
+            <div class="circle border_green"></div>
+            <div class="circle border_green"></div>
+        </div>
+    </div>
+
+    <div class="box1">
+        <div class="square"></div>
+        <div class="square red"> <i class="fa-solid fa-star"></i></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square "></div>
+        <div class="square "></div>
+        <div class="square "></div>
+        <div class="square red "></div>
+        <div class="square red"></div>
+        <div class="square red"></div>
+        <div class="square red"></div>
+        <div class="square red"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square red"><i class="fa-solid fa-star"></i></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="middle"></div>
+    <div class="box1">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square yellow"><i class="fa-solid fa-star"></i></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square yellow"></div>
+        <div class="square yellow"></div>
+        <div class="square yellow"></div>
+        <div class="square yellow"></div>
+        <div class="square yellow"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square yellow"><i class="fa-solid fa-star"></i></div>
+        <div class="square"></div>
+    </div>
+    <div class="blue house">
+        <div class="home">
+            <div class="circle border_blue"></div>
+            <div class="circle border_blue"></div>
+            <div class="circle border_blue"></div>
+            <div class="circle border_blue"></div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="square"></div>
+        <div class="square blue"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square blue"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square blue"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square blue"></div>
+        <div class="square blue"><i class="fa-solid fa-star"></i></div>
+        <div class="square blue"><i class="fa-solid fa-star"></i></div>
+        <div class="square blue"></div>
+        <div class="square "></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+
+    <div class="yellow house">
+        <div class="home">
+            <div class="circle border_yellow"></div>
+            <div class="circle border_yellow"></div>
+            <div class="circle border_yellow"></div>
+            <div class="circle border_yellow"></div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+</body>
+
+</html>

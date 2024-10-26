@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+      
+        .text {
+            display: flex;
+            justify-content: space-around;
+            font-size: 2rem;
+        }
+
+        .sudoku {
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .main {
+            border: 2px solid;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 33.6vw;
+
+
+
+        }
+
+        .box1 {
+            height: 21vh;
+            width: 11vw;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            text-align: center;
+            column-gap: 0;
+
+
+
+        }
+
+        .green {
+            background-color: #A9D8B8;
+        }
+
+        .cell {
+            border: 1px solid black;
+            font-size: 3rem;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <p class="text">S U D O K U</p>
+        <p class="text">A N S W E R</p>
+    </div>
+    <div class="sudoku">
+        <div class="main">
+            <div class="box1">
+                <div class="cell">8</div>
+                <div class="cell"></div>
+                <div class="cell">6</div>
+                <div class="cell"></div>
+                <div class="cell">4</div>
+                <div class="cell"></div>
+                <div class="cell">2</div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+
+            </div>
+            <div class="box1 green">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell">3</div>
+                <div class="cell"></div>
+                <div class="cell">1</div>
+                <div class="cell"></div>
+                <div class="cell">8</div>
+                <div class="cell">7</div>
+                <div class="cell"></div>
+            </div>
+            <div class="box1">
+                <div class="cell"></div>
+                <div class="cell">9</div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell">6</div>
+                <div class="cell">8</div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell">5</div>
+            </div>
+            <div class="box1 green">
+                <div class="cell">1</div>
+                <div class="cell"></div>
+                <div class="cell">8</div>
+                <div class="cell"></div>
+                <div class="cell">3</div>
+                <div class="cell"></div>
+                <div class="cell">7</div>
+                <div class="cell"></div>
+                <div class="cell">5</div>
+            </div>
+            <div class="box1">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell">5</div>
+                <div class="cell">1</div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell">3</div>
+                <div class="cell"></div>
+            </div>
+            <div class="box1 green">
+                <div class="cell"></div>
+                <div class="cell">2</div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell">5</div>
+                <div class="cell"></div>
+                <div class="cell">9</div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="box1">
+                <div class="cell"></div>
+                <div class="cell">2</div>
+                <div class="cell">1</div>
+                <div class="cell">6</div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell">8</div>
+                <div class="cell">7</div>
+            </div>
+            <div class="box1 green">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell">7</div>
+                <div class="cell"></div>
+                <div class="cell">2</div>
+                <div class="cell"></div>
+                <div class="cell">6</div>
+                <div class="cell"></div>
+                <div class="cell">4</div>
+            </div>
+            <div class="box1">
+                <div class="cell"></div>
+                <div class="cell">4</div>
+                <div class="cell"></div>
+                <div class="cell">8</div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell">3</div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="box1">
+                <div class="cell">8</div>
+                <div class="cell">7</div>
+                <div class="cell">6</div>
+                <div class="cell">5</div>
+                <div class="cell">4</div>
+                <div class="cell">3</div>
+                <div class="cell">2</div>
+                <div class="cell">1</div>
+                <div class="cell">9</div>
+
+            </div>
+            <div class="box1 green">
+                <div class="cell">5</div>
+                <div class="cell">4</div>
+                <div class="cell">3</div>
+                <div class="cell">2</div>
+                <div class="cell">1</div>
+                <div class="cell">9</div>
+                <div class="cell">8</div>
+                <div class="cell">7</div>
+                <div class="cell">6</div>
+            </div>
+            <div class="box1">
+                <div class="cell">1</div>
+                <div class="cell">9</div>
+                <div class="cell">2</div>
+                <div class="cell">7</div>
+                <div class="cell">6</div>
+                <div class="cell">8</div>
+                <div class="cell">4</div>
+                <div class="cell">3</div>
+                <div class="cell">5</div>
+            </div>
+            <div class="box1 green">
+                <div class="cell">1</div>
+                <div class="cell">9</div>
+                <div class="cell">8</div>
+                <div class="cell">4</div>
+                <div class="cell">3</div>
+                <div class="cell">2</div>
+                <div class="cell">7</div>
+                <div class="cell">6</div>
+                <div class="cell">5</div>
+            </div>
+            <div class="box1">
+                <div class="cell">7</div>
+                <div class="cell">6</div>
+                <div class="cell">5</div>
+                <div class="cell">1</div>
+                <div class="cell">9</div>
+                <div class="cell">8</div>
+                <div class="cell">4</div>
+                <div class="cell">3</div>
+                <div class="cell">2</div>
+            </div>
+            <div class="box1 green">
+                <div class="cell">3</div>
+                <div class="cell">2</div>
+                <div class="cell">4</div>
+                <div class="cell">6</div>
+                <div class="cell">5</div>
+                <div class="cell">7</div>
+                <div class="cell">9</div>
+                <div class="cell">8</div>
+                <div class="cell">1</div>
+            </div>
+            <div class="box1">
+                <div class="cell">3</div>
+                <div class="cell">2</div>
+                <div class="cell">1</div>
+                <div class="cell">6</div>
+                <div class="cell">5</div>
+                <div class="cell">4</div>
+                <div class="cell">9</div>
+                <div class="cell">8</div>
+                <div class="cell">7</div>
+            </div>
+            <div class="box1 green">
+                <div class="cell">9</div>
+                <div class="cell">8</div>
+                <div class="cell">7</div>
+                <div class="cell">3</div>
+                <div class="cell">2</div>
+                <div class="cell">1</div>
+                <div class="cell">6</div>
+                <div class="cell">5</div>
+                <div class="cell">4</div>
+            </div>
+            <div class="box1">
+                <div class="cell">5</div>
+                <div class="cell">4</div>
+                <div class="cell">6</div>
+                <div class="cell">8</div>
+                <div class="cell">7</div>
+                <div class="cell">9</div>
+                <div class="cell">2</div>
+                <div class="cell">1</div>
+                <div class="cell">3</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

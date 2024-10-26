@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .main {
+
+            height: 115vh;
+            width: 39vw;
+            border: 2px solid black;
+            background-color: rgb(50, 50, 50);
+            color: white;
+
+        }
+
+        .screen {
+            font-size: 6rem;
+            display: flex;
+            justify-content: flex-end;
+            padding: 30px 30px 0 0;
+        }
+
+        .numbers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 6%;
+            font-size: 2rem;
+
+        }
+
+        .num {
+            height: 14vh;
+            width: 7vw;
+            border-radius: 100%;
+            background-color: rgb(58, 106, 149);
+            margin-bottom: 4%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+
+
+        }
+
+        .zero {
+          border-radius: 50px;
+            width: 14vw;
+            display: flex;
+            justify-content: flex-start;
+            padding: 0 0 0 5%;
+        }
+        .first{
+            background-color: rgb(172, 171, 171);
+            color: black;
+
+        }
+        .operator{
+            background-color: orange;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="screen">
+            7744
+        </div>
+        <div class="numbers">
+            <div class="num first">C</div>
+            <div class="num first">+/-</div>
+            <div class="num first">%</div>
+            <div class="num operator">÷</div>
+            <div class="num">7</div>
+            <div class="num">8</div>
+            <div class="num">9</div>
+            <div class="num operator">x</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+            <div class="num operator">-</div>
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num operator">+</div>
+            <div class="num zero">0</div>
+            <div class="num">,</div>
+            <div class="num operator">=</div>
+        </div>
+    </div>
+</body>
+
+</html>
