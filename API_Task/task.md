@@ -1,40 +1,26 @@
 ## Task: Creating API Endpoints Using an In-Memory Object for Student Data
 
-Overview:
+### Overview
 
 You will be handling the following:
 
-Three GET requests:
+- **Three GET requests**:
+    1. Get all students' data
+    2. Get individual student details by name
+    3. Get a student's email by name
+- **Two POST requests**:
+    1. Add a new student’s details
+    2. Add a fourth website link to an existing student
 
-1. Get all students' data.
-
-
-2. Get individual student details by name.
-
-
-3. Get a student's email by name.
-
-
-
-Two POST requests:
-
-1. Add a new student’s details.
-
-
-2. Add a fourth website link to an existing student.
-
-
-
-
-All requests will operate on an in-memory JavaScript object (studentsData) containing student data (name, email, and a list of websites).
-
+All requests will operate on an **in-memory JavaScript object (`studentsData`)** containing student data (name, email, and a list of websites).
 
 ---
 
-Data Structure:
+### Data Structure
 
-Here’s an example structure for the studentsData object:
+Example `studentsData` object:
 
+```jsx
 let studentsData = {
   "Rahul Sharma": {
     email: "rahul.sharma@codinggita.com",
@@ -54,21 +40,28 @@ let studentsData = {
   }
 };
 
-1. GET Request 1: Retrieve All Student Data
+```
 
-Endpoint: /students
+---
 
-Method: GET
+## API Endpoints
 
-Description: This request retrieves all student details (names, emails, and websites).
+### 1. GET Request: Retrieve All Student Data
 
+- **Endpoint:** `/students`
+- **Method:** `GET`
+- **Description:** Retrieves all student details (names, emails, and websites).
 
-Example Request in Postman:
+**Example Request (Postman):**
 
+```
 GET /students
 
-Example Response:
+```
 
+**Example Response:**
+
+```json
 {
   "Rahul Sharma": {
     "email": "rahul.sharma@codinggita.com",
@@ -88,24 +81,26 @@ Example Response:
   }
 }
 
+```
 
 ---
 
-2. GET Request 2: Retrieve Individual Student Details by Name
+### 2. GET Request: Retrieve Individual Student Details by Name
 
-Endpoint: /students/:name
+- **Endpoint:** `/students/:name`
+- **Method:** `GET`
+- **Description:** Retrieves the details of a student based on their name.
 
-Method: GET
+**Example Request (Postman):**
 
-Description: This request retrieves the details of a student based on their name.
-
-
-Example Request in Postman:
-
+```
 GET /students/Rahul Sharma
 
-Example Response:
+```
 
+**Example Response:**
+
+```json
 {
   "email": "rahul.sharma@codinggita.com",
   "websites": [
@@ -115,46 +110,51 @@ Example Response:
   ]
 }
 
+```
 
 ---
 
-3. GET Request 3: Retrieve a Student's Email by Name
+### 3. GET Request: Retrieve a Student's Email by Name
 
-Endpoint: /students/:name/email
+- **Endpoint:** `/students/:name/email`
+- **Method:** `GET`
+- **Description:** Retrieves only the email address of a student by their name.
 
-Method: GET
+**Example Request (Postman):**
 
-Description: This request retrieves only the email address of a student by their name.
-
-
-Example Request in Postman:
-
+```
 GET /students/Anjali Mehta/email
 
-Example Response:
+```
 
+**Example Response:**
+
+```json
 {
   "email": "anjali.mehta@codinggita.com"
 }
 
+```
 
 ---
 
-4. POST Request 1: Add a New Student
+### 4. POST Request: Add a New Student
 
-Endpoint: /students
+- **Endpoint:** `/students`
+- **Method:** `POST`
+- **Description:** Adds a new student to the `studentsData` object.
+- **Request Body:** Must include `name`, `email`, and `websites` array.
 
-Method: POST
+**Example Request (Postman):**
 
-Description: This request adds a new student to the studentsData object. You’ll need to send the name, email, and a list of websites in the request body.
-
-
-Example Request in Postman:
-
+```
 POST /students
 
-Example Body (JSON):
+```
 
+**Example Body:**
+
+```json
 {
   "name": "Raj Patel",
   "email": "raj.patel@codinggita.com",
@@ -165,8 +165,11 @@ Example Body (JSON):
   ]
 }
 
-Example Response (after addition):
+```
 
+**Example Response:**
+
+```json
 {
   "message": "Student added successfully",
   "student": {
@@ -181,30 +184,36 @@ Example Response (after addition):
   }
 }
 
+```
 
 ---
 
-5. POST Request 2: Add a Fourth Website to an Existing Student
+### 5. POST Request: Add a Fourth Website to an Existing Student
 
-Endpoint: /students/:name/websites
+- **Endpoint:** `/students/:name/websites`
+- **Method:** `POST`
+- **Description:** Adds a fourth website to an existing student’s `websites` array.
+- **Request Body:** Must include `website`.
 
-Method: POST
+**Example Request (Postman):**
 
-Description: This request adds a fourth website to an existing student’s websites array.
-
-
-Example Request in Postman:
-
+```
 POST /students/Rahul Sharma/websites
 
-Example Body (JSON):
+```
 
+**Example Body:**
+
+```json
 {
   "website": "http://rahulsocialmedia.com"
 }
 
-Example Response (after website addition):
+```
 
+**Example Response:**
+
+```json
 {
   "message": "Website added successfully",
   "student": {
@@ -219,3 +228,5 @@ Example Response (after website addition):
     }
   }
 }
+
+```
