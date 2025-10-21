@@ -1,0 +1,48 @@
+.box {
+    height: 600px;
+    width: 450px;
+margin: auto;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 10px;
+
+
+}
+
+.box1 {
+    width: 450px;
+    height: 350px;
+    background-image: url(https://img.freepik.com/free-photo/view-boat-floating-water-with-nature-scenery_23-2150693308.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.label {
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.labeldiv {
+    display: flex;
+}
+
+.read {
+    background-color: rgb(81, 154, 227);
+    color: blue;
+    height: 30px;
+    width: 150px;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}

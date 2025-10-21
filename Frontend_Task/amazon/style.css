@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+.mainnav {
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    height: 50px;
+    width: 140px;
+    background-color: white;
+}
+
+
+.log {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyu7F6zmjXl4Na8_Tdd-0mDQ43n2fyy3mBhgAonk-LQai1EdRLqyke_HS2v5e8b6ZACak&usqp=CAU);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+.border {
+    border: 2px transparent
+}
+
+.border:hover {
+    border: 1.5px solid white
+}
+
+.addfirst {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.addsec {
+    font-size: 1rem;
+}
+
+.addicon {
+    display: flex;
+    align-items: center;
+
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    justify-content: space-evenly;
+}
+
+.search_bar:hover {
+    border: 2px solid orange;
+    border-radius: 7px;
+}
+
+.select {
+    height: 36.5px;
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search {
+    height: 34px;
+
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    height: 36.5px;
+    color: #0F1111;
+}
+
+.language_selector {
+    background-color: #0F1111;
+    color: white;
+    border: none;
+}
+
+.accounts {
+    background-color: #0F1111;
+    color: white;
+    border: none;
+
+
+}
+
+.cart i {
+    font-size: 30px;
+
+}
+
+.cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+.navone {
+    font-size: 0.7rem;
+    background-color: #0F1111;
+    color: white;
+    border: none;
+}
+
+.margins {
+    margin-left: 4px;
+}
+
+.navtwo {
+    font-size: 0.85rem;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel_tabs {
+    text-decoration: none;
+    color: white;
+    font-size: 0.85rem;
+    margin-right: 15px;
+}
+
+.panel_deals {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.div_panel {
+    width: 70%;
+}
+
+.hero_section {
+    background-image: url(https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg);
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+
+
+}
+
+.hero_msg {
+    font-size: 0.5rem;
+    text-align: center;
+    background-color: #e2e7e6;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 97%;
+    margin-bottom: 25px;
+
+
+}
+
+.hero_msg a {
+    text-decoration: none;
+    color: #007185;
+
+}
+
+.hero_msg a:hover {
+    color: red;
+    text-decoration: solid red underline;
+}
+
+.shop-content {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    width: 21%;
+    height: 350px;
+    background-color: white;
+    border: none;
+    padding: 20px 1rem 15px;
+    margin-top: 15px;
+
+}
+
+.img1 {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg);
+
+}
+
+.img {
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box_content {text-decoration: none;
+    color: #007185
+}
+
+.img2 {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg);
+}
+
+.img3 {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v6._SY304_CB573698005_.jpg);
+}
+
+.img6 {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v8._SY304_CB573698005_.jpg);
+}
+
+.img5 {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2023/img/Consumer_Electronics/XCM_CUTTLE_1622892_3373436_379x304_1X_en_US._SY304_CB597161294_.jpg);
+}
+
+.img4 {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/dex/2023/Roar/October/D_CC_Roar_OfficeDepot_1023_1X_Furnitrure_v2._SY304_CB577544739_.jpg);
+}
+
+.img7 {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg);
+}
+
+.img8 {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/us-manual-merchandising/XCM_CUTTLE_1622894_3373440_379x304_1X_en_size1_US._SY304_CB597469214_.jpg);
+}
+
+footer {
+    margin-top: 15px;
+}
+
+.foot {
+    height: 50px;
+    background-color: #37475a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.foot_panel1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+.foot_panel1 {
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    height: 300px;
+    justify-content: space-evenly;
+
+}
+
+.foot_panel1 a:hover {
+    text-decoration: solid white underline;
+
+}
+
+.foot_panel1 ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.back {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.para {
+    font-weight: 700;
+}
+
+.foot_panel2 {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.5px solid white;
+}
+
+.foot_panel3 {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    font-size: 0.7rem;
+
+    
+}
+
+.foot_panel3 a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.70rem;
+    margin-top: 10px;
+
+}
+
+.foot_panel3 a:hover {
+    text-decoration: solid white underline;
+}
+
+.copyrights{ color: white; background-color: black;
+display: flex;
+justify-content: center;
+font-size: 0.70rem;
+height: 50px;}
